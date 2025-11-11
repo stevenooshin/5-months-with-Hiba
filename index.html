@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Nooshinfar - Creative Services Rate Card</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #334155);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #e2e8f0;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #38bdf8, #a78bfa, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.3);
+        }
+        
+        .card-highlight {
+            border-color: #a78bfa; /* Purple border */
+            transform: scale(1.03);
+            box-shadow: 0 10px 40px -10px rgba(167, 139, 250, 0.3);
+        }
+        
+        .badge {
+            background: linear-gradient(to right, #a78bfa, #f472b6);
+        }
+
+        .price-tag {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .price-tag-highlight {
+            background: linear-gradient(135deg, #a78bfa 0%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-glow {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+            transform: scale(1.02);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-white">Steve Nooshinfar</div>
+            <a href="https://wa.me/971562450103" class="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+                <i class="fab fa-whatsapp mr-2"></i>Contact Directly
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 pt-32 pb-20">
+        
+        <!-- Intro Section -->
+        <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+                Creative Services <br>
+                <span class="text-gradient">Rate Card</span>
+            </h1>
+            <p class="text-lg text-slate-400 leading-relaxed">
+                Flexible, high-quality production solutions tailored for agency partnerships. 
+                Build your perfect monthly package or choose a full-service retainer.
+            </p>
+        </div>
+
+        <!-- Pricing Grid -->
+        <div class="text-center mb-16 fade-in delay-100">
+            <h2 class="text-3xl font-bold text-white">"A La Carte" Menu</h2>
+            <p class="text-slate-400">Select individual services as you need them.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+            <!-- Service 1: Videography -->
+            <div class="card rounded-2xl p-8 fade-in delay-100 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i class="fas fa-video text-8xl text-blue-500"></i>
+                </div>
+                <div class="relative z-10">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 mb-6">
+                        <i class="fas fa-camera text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Full-Day Videography</h3>
+                    <p class="text-slate-400 mb-6 h-12">Professional on-site filming with dedicated videographer. Includes all equipment.</p>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-3xl font-bold price-tag">1,000 - 1,300</span>
+                        <span class="text-slate-500 ml-2">AED / Day</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-300 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Up to 8 Hours On-Site</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Professional Lighting & Audio</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> 4K High Quality Footage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 2: Video Editing -->
+            <div class="card rounded-2xl p-8 fade-in delay-200 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i class="fas fa-photo-film text-8xl text-purple-500"></i>
+                </div>
+                <div class="relative z-10">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 mb-6">
+                        <i class="fas fa-scissors text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Reel / TikTok Editing</h3>
+                    <p class="text-slate-400 mb-6 h-12">Dynamic, engaging edits optimized for social algorithms. Fast turnaround.</p>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-3xl font-bold price-tag">300</span>
+                        <span class="text-slate-500 ml-2">AED / Video</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-300 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Sound Design & Trending Audio</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Dynamic Captions & Hooks</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Color Grading</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3: Social Posts -->
+            <div class="card rounded-2xl p-8 fade-in delay-300 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i class="fas fa-layer-group text-8xl text-pink-500"></i>
+                </div>
+                <div class="relative z-10">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pink-500/20 text-pink-400 mb-6">
+                        <i class="fas fa-image text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Static / Carousel Posts</h3>
+                    <p class="text-slate-400 mb-6 h-12">High-end graphic design and carousel layouts that stop the scroll.</p>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-3xl font-bold price-tag">150</span>
+                        <span class="text-slate-500 ml-2">AED / Post</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-300 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Custom Graphic Design</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Brand Identity Matching</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Carousel Layouts (up to 5 slides)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 4: Story Management -->
+            <div class="card rounded-2xl p-8 fade-in delay-400 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                    <i class="fas fa-mobile-screen text-8xl text-teal-500"></i>
+                </div>
+                <div class="relative z-10">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 mb-6">
+                        <i class="fas fa-share-nodes text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Weekly Story Management</h3>
+                    <p class="text-slate-400 mb-6 h-12">Active engagement and daily story posting to keep the audience connected.</p>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-3xl font-bold price-tag">250</span>
+                        <span class="text-slate-500 ml-2">AED / Week</span>
+                    </div>
+                    <ul classs="space-y-2 text-sm text-slate-300 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Daily Posting on Active Days</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Resharing & Community Engagement</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Behind-the-Scenes Coverage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW: Package Section -->
+        <div class="text-center mt-24 mb-16 fade-in delay-300">
+            <h2 class="text-3xl font-bold text-white">Full-Service Monthly Packages</h2>
+            <p class="text-slate-400">The complete solution for consistent, high-quality content.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <!-- Package 1: Flexible -->
+            <div class="card rounded-2xl p-8 fade-in delay-400">
+                <h3 class="text-2xl font-bold text-white mb-2">Monthly Retainer</h3>
+                <p class="text-slate-400 mb-6">Full-service, paid month-to-month. Cancel anytime.</p>
+                <div class="flex items-baseline mb-6">
+                    <span class="text-4xl font-bold price-tag">14,250</span>
+                    <span class="text-slate-500 ml-2">AED / Month</span>
+                </div>
+                <p class="font-semibold text-white mb-3">What's Included (Monthly):</p>
+                <ul class="space-y-2 text-sm text-slate-300 mb-6">
+                    <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> 8 Full-Day Videography Shoots</li>
+                    <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> 8 Reel / TikTok Edits</li>
+                    <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> 12 Static / Carousel Posts</li>
+                    <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i> Full Weekly Story Management</li>
+                </ul>
+                <button class="w-full text-center px-6 py-3 rounded-lg font-bold text-white border border-white/20 hover:bg-white/10 transition-colors">
+                    Select Plan
+                </button>
+            </div>
+            
+            <!-- Package 2: Best Value -->
+            <div class="card rounded-2xl p-8 fade-in delay-400 card-highlight relative">
+                <span class="badge absolute top-0 -translate-y-1/2 left-8 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
+                    Best Value
+                </span>
+                <h3 class="text-2xl font-bold text-white mb-2">5-Month Commitment</h3>
+                <p class="text-slate-400 mb-6">Commit to 5 months and receive a significant discount.</p>
+                <div class="flex items-baseline mb-6">
+                    <span class="text-4xl font-bold price-tag-highlight">13,000</span>
+                    <span class="text-slate-500 ml-2">AED / Month</span>
+                </div>
+                <p class="font-semibold text-white mb-3">What's Included (Monthly):</p>
+                <ul class="space-y-2 text-sm text-slate-300 mb-6">
+                    <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> 8 Full-Day Videography Shoots</li>
+                    <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> 8 Reel / TikTok Edits</li>
+                    <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> 12 Static / Carousel Posts</li>
+                    <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i> Full Weekly Story Management</li>
+                </ul>
+                <button class="w-full text-center px-6 py-3 rounded-lg font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90 transition-opacity shadow-lg">
+                    Select 5-Month Plan
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Custom Package CTA -->
+        <div class="max-w-4xl mx-auto mt-24 p-8 rounded-2xl bg-gradient-to-r from-blue-900/50 to-purple-900/50 border border-white/10 text-center fade-in delay-400 backdrop-blur-sm">
+            <h3 class="text-2xl font-bold text-white mb-4">Let's Discuss Your Project</h3>
+            <p class="text-slate-300 mb-8 max-w-2xl mx-auto">
+                These packages are designed to cover the most common agency needs. 
+                If you have a different scope or budget, let's talk!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/971562450103" class="btn-glow bg-green-500 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-green-400 transition-colors">
+                    <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                </a>
+                <a href="httpsDo you want to add an email link as well? (e.g., mailto:your-email@example.com)" class="px-8 py-3 rounded-lg font-bold text-white border border-white/20 hover:bg-white/10 transition-colors">
+                    Email Me
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-900 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Steve Nooshinfar. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
